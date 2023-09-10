@@ -86,6 +86,8 @@ hr {
     display: grid;
     border: 1px solid black;
     box-shadow: 0 5px 10px black;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -108,4 +110,15 @@ h3 {
     padding: 10px;
     font-weight: bold;
     line-height: 1.6;
+}
+
+/*footer*/
+
+footer {
+    margin: 2rem auto;
+    background-color: #d5bdaf;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2.5;
+    font-family: 'Lora', serif;
 }
