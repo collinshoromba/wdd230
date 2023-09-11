@@ -48,6 +48,7 @@ nav {
     margin: 0 auto;
     max-width: 767px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    
 }
 
 nav ul {
@@ -121,4 +122,13 @@ footer {
     text-align: center;
     line-height: 2.5;
     font-family: 'Lora', serif;
+}
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }
