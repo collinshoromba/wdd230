@@ -49,7 +49,7 @@ h1 {
 nav {
     background-color: #d5bdaf;
     margin: 0 auto;
-    max-width: 767px;
+    max-width: 640px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
     
 }
@@ -82,6 +82,7 @@ h2 {
     border-bottom: 1px solid black;
     margin-bottom: 2rem;
     font-size: 16px;
+    text-align: center;
 }
 
 .card {
@@ -130,6 +131,9 @@ footer {
 		flex: 1 1 100%;
 	}
 
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -138,6 +142,15 @@ footer {
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 200px;
     }
 }
