@@ -25,9 +25,8 @@ header {
 header,
 main,
 footer {
-	/*max-width: 767px;
-	margin: 0 auto;*/
-    max-width: 640px;
+	max-width: 767px;
+	/*margin: 0 auto;*/
     margin: 1rem auto;
     padding: 1rem;
 }
@@ -49,7 +48,7 @@ h1 {
 nav {
     background-color: #d5bdaf;
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 767px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
     
 }
