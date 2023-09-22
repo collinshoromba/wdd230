@@ -154,7 +154,7 @@ footer {
 
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .column {
         grid-template-columns: 1fr 1fr;
     }
@@ -176,4 +176,4 @@ footer {
         font-size: 20px;
         font-weight: bold;
     }
-}
+}*/
