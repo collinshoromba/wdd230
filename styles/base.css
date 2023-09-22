@@ -85,7 +85,7 @@ nav ul li a:hover {
 h2 {
     border-bottom: 1px solid black;
     margin-bottom: 2rem;
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -114,6 +114,11 @@ h3 {
     padding: 10px;
     font-weight: bold;
     line-height: 1.6;
+    color: #03071e;
+}
+
+.card ul li a:hover {
+    color: #c1121f;
 }
 
 /*footer*/
@@ -126,6 +131,15 @@ footer {
     line-height: 2.5;
     font-family: 'Lora', serif;
 }
+
+#footer-sect p {
+    font-weight: bold;
+    font-family: 'Roboto' sans-serif;
+}
+
+
+
+
 /*640 media query*/
 @media (min-width: 640px) {
 	nav ul {
