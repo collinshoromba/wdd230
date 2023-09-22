@@ -69,6 +69,11 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: white;
+    background-color: #14213D;
+}
+
 /*main content*/
 
 .column {
