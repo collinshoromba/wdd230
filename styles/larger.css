@@ -20,4 +20,12 @@
         font-size: 20px;
         font-weight: bold;
     }
+
+    .wider {
+        width: 450px; /* Card 1 occupies 70% of the width on large screens */
+    }
+
+    .wider2 {
+        width: 100%; /* Card 2 occupies 30% of the width on large screens */
+    }
 }
