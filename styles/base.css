@@ -64,7 +64,7 @@ nav ul li a {
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
-	font-size: 0.95rem;
+	font-size: 0.01rem;
 	transition: 0.5s;
     font-weight: bold;
 }
@@ -151,7 +151,9 @@ footer {
 		flex: 1 1 100%;
 	}
 
-
+    nav ul li a {
+        font-size: 10px;
+    }
 
 
 
