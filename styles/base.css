@@ -116,7 +116,7 @@ h3 {
     padding: 10px;
     font-weight: bold;
     line-height: 1.6;
-    color: #03071e;
+    color: #0a2463;
 }
 
 .card ul li a:hover {
@@ -149,11 +149,7 @@ footer {
 	}
 	nav ul li {
 		flex: 1 1 100%;
-	}
-
-    nav ul li a {
-        font-size: 10px;
-    }
+	} 
 
 
 
