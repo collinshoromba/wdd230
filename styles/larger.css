@@ -28,4 +28,25 @@
     .wider2 {
         width: 100%; /* Card 2 occupies 30% of the width on large screens */
     }
+
+    main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+    main .card:nth-child(2) {
+		display: block;
+	}
+
+	main .card:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main .card img {
+		display: block;
+	}
+	main .card img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
 }
