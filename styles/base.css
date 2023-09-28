@@ -34,16 +34,77 @@ footer {
 img {
     width: 80px;
     height: auto;
-    margin-left: 30px;
+    margin-left: 1rem;
     
 }
 
 h1 {
     font-size: 1rem;
-    margin: 30px;
+    margin: 50px;
 }
 
-/*Nav styling...........*/
+/*Hamburger menu...........*/
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 3rem;
+	right: 1rem;
+    align-items: center;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #d5bdaf;
+	color: #000;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+    font-weight: bold;
+}
+.navigation li a:hover {
+	color: white;
+    background-color: #14213D;
+	font-weight: 700;
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+nav {
+	max-width: 767px;
+	margin: 1rem auto;
+}
+
+/*nav styling
 
 nav {
     background-color: #d5bdaf;
@@ -72,7 +133,7 @@ nav ul li a {
 nav ul li a:hover {
     color: white;
     background-color: #14213D;
-}
+}*/
 
 /*main content*/
 
@@ -169,6 +230,37 @@ footer {
 
 
 
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
 }
 
 /*@media (min-width: 768px) {
