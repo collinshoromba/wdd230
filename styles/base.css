@@ -15,7 +15,7 @@ body {
 header {
     margin: 2rem auto;
     background-color: #D6CCC2;
-    padding: 1rem;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -34,13 +34,15 @@ footer {
 img {
     width: 80px;
     height: auto;
-    margin-left: 1rem;
+    margin-right: 5rem;
+    
     
 }
 
 h1 {
     font-size: 1rem;
-    margin: 0 auto;
+    margin-right: 6.5rem;
+    font-size: 16px;
 }
 
 /*Hamburger menu...........*/
@@ -54,7 +56,7 @@ h1 {
 	position: absolute;
 	top: 2rem;
 	right: 1rem;
-    align-items: center;
+    margin-left: 1rem;
 }
 
 #menu::before {
@@ -226,6 +228,8 @@ footer {
 	nav ul li {
 		flex: 1 1 100%;
 	} 
+
+  
 
 
 
