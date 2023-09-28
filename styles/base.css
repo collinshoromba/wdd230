@@ -40,7 +40,7 @@ img {
 
 h1 {
     font-size: 1rem;
-    margin: 50px;
+    margin: 0 auto;
 }
 
 /*Hamburger menu...........*/
@@ -52,7 +52,7 @@ h1 {
 	background-color: #eee;
 	color: #000;
 	position: absolute;
-	top: 3rem;
+	top: 2rem;
 	right: 1rem;
     align-items: center;
 }
