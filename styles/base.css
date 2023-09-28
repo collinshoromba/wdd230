@@ -42,7 +42,7 @@ img {
 h1 {
     font-size: 1rem;
     margin-right: 7.5rem;
-    font-size: 7.5px;
+    font-size: x-small;
 }
 
 /*Hamburger menu...........*/
@@ -228,6 +228,11 @@ footer {
 	nav ul li {
 		flex: 1 1 100%;
 	} 
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
   
 
