@@ -123,6 +123,11 @@ h3 {
     color: #c1121f;
 }
 
+.map iframe {
+    width: 100%;
+    height: 400px;
+}
+
 /*footer*/
 
 footer {
