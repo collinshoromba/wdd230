@@ -92,6 +92,12 @@ footer {
     font-family: 'Lora', serif;
 }
 
+footer #footer-sect p {
+    font-size: 18px;
+}
+
+
+
 #footer-sect p {
     font-weight: bold;
     font-size: 12px;
