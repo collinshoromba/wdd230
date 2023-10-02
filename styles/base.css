@@ -39,6 +39,10 @@ img {
     
 }
 
+img[Attributes] {
+    aspect-ratio: auto 640 / 360;
+  }
+
 h1 {
     font-size: 1rem;
     margin-right: 7.5rem;
