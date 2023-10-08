@@ -5,9 +5,10 @@
 }
 
 header {
-  
+  font-family: 'Lato', sans-serif;
   align-items: center;
   justify-content: space-evenly;
+  background-color: bisque;
   
 }
 
@@ -90,6 +91,9 @@ nav {
 }
 
 
+
+
+
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
@@ -149,6 +153,10 @@ nav {
 }
 
 @media (max-width: 37.5em) {
+  header {
+    border-bottom: 1px solid black ;
+  }
+
   header h1 {
     display: none;
   }
