@@ -1,10 +1,7 @@
-const btn = document.getElementById('menu-btn')
-const nav = document.getElementById('menu')
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-function navToggle() {
-  btn.classList.toggle('open')
-  nav.classList.toggle('hidden')
-  document.body.classList.toggle('no-scroll')
-}
-
-btn.addEventListener('click', navToggle);
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});

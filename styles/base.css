@@ -238,18 +238,13 @@ footer {
         text-align: center;
     }
 
-  
-
-
-
-
 }
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
 	h1 {
 		font-size: 2.5rem;
-		margin-left: 0;
+		margin-right: 0;
 		text-align: center;
 	}
 	
