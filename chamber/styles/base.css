@@ -98,7 +98,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 30vh;
-  background-image: url("/chamber/images/mountains-1587287_1280.jpg");
+  background-image: url("../images/mountains-1587287_1280.jpg");
   background-size: cover;
   background-position: center;
 }
