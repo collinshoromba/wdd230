@@ -98,7 +98,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 40vh;
-  background-image: url(/chamber/images/pexels-omotayo-tajudeen-3213283.jpg);
+  background-image: url('/chamber/images/pexels-omotayo-tajudeen-3213283.jpg');
   background-size: cover;
   background-position: center center;
   top: 0;
