@@ -97,7 +97,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40vh;
+  height: 50vh;
   background-image: url("/chamber/images/pexels-omotayo-tajudeen-3213283.jpg");
   background-size: cover;
   background-position: center center;
@@ -134,7 +134,6 @@ nav {
   gap: 50px;
   text-align: center; /* Add some spacing between columns */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-  background-color: #004aad;
   margin: 5px;
 }
  .wider-1 {
@@ -148,7 +147,6 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   text-align: center;
-  background-color: #173966;
   margin: 5px;
 }
 
