@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .first-column {
+      grid-template-columns: 1fr; /* Display as a single column on smaller screens */
+    }
+  
+    .adverts {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 37.5em) {
+    header {
+      border-bottom: 1px solid black ;
+    }
+  
+    header h1 {
+      display: none;
+    }
+  
+    header img {
+      justify-content: left;
+      display: inline;
+    }
+  }
