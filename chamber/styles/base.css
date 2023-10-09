@@ -127,27 +127,40 @@ nav {
 }
 
 
-
-.first-column {
+.main {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
-  gap: 50px;
-  text-align: center; /* Add some spacing between columns */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-  margin: 5px;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
- .wider-1 {
-  background-color: white;
-  gap: 10px;
-  border: 1px solid black; /*I ended up here 12:11*/
- }
+
+.main section {
+  padding: 1rem;
+  background-color: aqua;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
 
 .adverts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  text-align: center;
-  margin: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.adverts section {
+  padding: 1rem;
+  background-color: antiquewhite;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+
+
+@media screen and (min-width: 500px) {
+  .main {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .adverts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 
