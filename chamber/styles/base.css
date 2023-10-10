@@ -130,6 +130,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .main section {
@@ -138,16 +139,25 @@ nav {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
+.ad-heading {
+  margin-top: 1rem;
+}
+
 .adverts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
 }
 
 .adverts section {
   padding: 1rem;
   background-color: antiquewhite;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  height: 200px;
+  text-align: center;
 }
 
 
