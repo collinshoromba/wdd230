@@ -8,7 +8,7 @@ header {
   font-family: 'Lato', sans-serif;
   align-items: center;
   justify-content: space-evenly;
-  background-color: bisque;
+  background-color: #f26419;
   
 }
 
@@ -26,7 +26,7 @@ header h1 {
 	font-family: times, serif;
 	font-size: 1.5rem;
 	margin-left: 1rem;
-
+  color: black;
   right: 1rem;
 }
 
@@ -59,7 +59,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: #333;
+  background-color: #004aad;
 	color: #fff;
 }
 
@@ -76,8 +76,8 @@ nav {
 }
 
 .navigation li a:hover {
-	background-color: #bbb;
-	color: #333;
+	background-color: #000;
+  color: whitesmoke;
 	font-weight: 700;
 }
 
@@ -109,7 +109,7 @@ nav {
   padding: 10px 20px;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #004aad;
+  background-color: #000080;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -140,15 +140,42 @@ nav {
 
 .main section {
   padding: 1rem;
-  background-color: aqua;
+  background-color: #ee964b;
   box-shadow: 0 0 30px #bf372a;
   height: 200px;
+}
+
+.main h2 {
+  margin-bottom: 2.5rem;
 }
 
 .ad-heading {
   margin-top: 1rem;
   text-align: center;
 }
+
+
+.ad {
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.adverts p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.adverts a {
+  color: white;
+}
+
+.adverts a:hover {
+  color: #fdc500;
+}
+
+
+
 
 .adverts {
   display: grid;
@@ -162,14 +189,15 @@ nav {
 
 .adverts section {
   padding: 1rem;
-  background-color: antiquewhite;
+  background-color: #333;
+  color: #fff;
   box-shadow: 0 0 30px #173966;
   height: 200px;
   text-align: center;
 }
 
 footer {
-  background-color: #333;
+  background-color: #004aad;
   color: #fff;
 }
 
