@@ -97,11 +97,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 400px;
   background-image: url("../images/mountains-1587287_1280.jpg");
   background-size: cover;
   background-position: center;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .btn {
@@ -115,6 +117,7 @@ nav {
   cursor: pointer;
   font-family: 'Playfair Display', serif;
   font-size: large;
+  border-radius: 25px 25px;
 }
 
 .btn:hover {
@@ -215,6 +218,8 @@ nav {
 footer {
   background-color: #004aad;
   color: #fff;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .compani-info {
