@@ -141,7 +141,7 @@ nav {
 .main section {
   padding: 1rem;
   background-color: aqua;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 30px #bf372a;
   height: 200px;
 }
 
@@ -163,7 +163,7 @@ nav {
 .adverts section {
   padding: 1rem;
   background-color: antiquewhite;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 30px #173966;
   height: 200px;
   text-align: center;
 }
