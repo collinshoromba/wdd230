@@ -133,7 +133,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
@@ -141,9 +141,9 @@ nav {
 .main section {
   padding: 1rem;
   background-color: #ee964b;
-  box-shadow: 0 0 30px #bf372a;
   width: 100%;
   height: auto;
+  border-radius: 20px 20px ;
 }
 
 .main h2 {
@@ -209,6 +209,7 @@ nav {
   box-shadow: 0 0 30px #173966;
   height: 200px;
   text-align: center;
+  border-radius: 20px 20px ;
 }
 
 footer {
