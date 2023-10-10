@@ -13,8 +13,4 @@
       justify-content: left;
       display: inline;
     }
-
-    .adverts {
-        grid-template-columns: 1fr;
-    }
   }
