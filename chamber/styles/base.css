@@ -5,29 +5,28 @@
 }
 
 header {
-  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
   align-items: center;
-  justify-content: space-evenly;
+  font-family: 'Lato', sans-serif;
   background-color: #f26419;
-  
+  text-align: center;
 }
 
-
-img {
-  width: 150px;
-  height: auto;
-
-	
+header img {
+max-width: 100px;
+ 
 }
 
 header h1 {
+  font-size: 20px;
 	text-align: center;
   justify-content: center;
 	font-family: times, serif;
-	font-size: 1.5rem;
-	margin-left: 1rem;
   color: black;
-  right: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 1000;
 }
 
 nav {
@@ -36,16 +35,18 @@ nav {
 
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: .25rem .75rem;
 	background-color: #eee;
 	color: #000;
 	position: absolute;
 	top: 2rem;
-	right: 2rem;
+	right: 1rem;
+  
+  font-size: 30px;
   
 }
+
 
 #menu::before {
 	content: "☰";
@@ -210,7 +211,7 @@ nav {
   background-color: #333;
   color: #fff;
   box-shadow: 0 0 30px #173966;
-  height: 200px;
+  height: 250px;
   text-align: center;
   border-radius: 20px 20px ;
 }
@@ -249,6 +250,10 @@ footer {
   line-height: 1.5;
 }
 
+.footer-column p a {
+  color: white;
+}
+
 #footer-sect {
   margin: 2rem auto;
   padding: 1rem;
@@ -261,6 +266,38 @@ footer {
   font-weight: bold;
   font-size: 12px;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  margin: 10px;
+  color: white;
+}
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social a {
+      margin: 10px; /* Optional: Add some spacing between the icons */
+  }
+
+  .social a i {
+    font-size: 30px; /* Adjust the size as needed */
+}
+
+
+.social a:hover {
+  color: #ee964b;
+ /* Optional: Add some spacing between the icons */
+}
+
+
 
 
 

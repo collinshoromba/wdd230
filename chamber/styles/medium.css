@@ -3,10 +3,13 @@
   @media (max-width: 37.5em) {
     header {
       border-bottom: 1px solid black ;
+      justify-content: space-between;
+      padding: 20px;
+        align-items: center;
     }
   
     header h1 {
-      display: none;
+        display: none;
     }
   
     header img {
