@@ -48,5 +48,9 @@
       #mode {
         top: 4rem;
       }
+
+      .map iframe {
+        width: 100%;
+      }
       
   }
