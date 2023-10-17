@@ -265,6 +265,10 @@ footer {
   max-width: 100px;
 }
 
+.footer-column img[Attributes] {
+  aspect-ratio: auto 640 / 360;
+}
+
 .footer-column h3 {
   margin: 0;
   font-size: 20px;
