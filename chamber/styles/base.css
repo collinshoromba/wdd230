@@ -5,7 +5,7 @@
 }
 
 header {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   padding: 10px;
   align-items: center;
@@ -27,6 +27,10 @@ header h1 {
   color: black;
   font-family: 'Lato', sans-serif;
   font-weight: 1000;
+}
+
+header img, header h1, header div {
+  margin-right: 10px;
 }
 
 nav {
@@ -55,6 +59,18 @@ nav {
 #menu.open::before {
 	content: "❎";
 }
+
+
+
+#mode {
+	position: absolute;
+	top: 5rem;
+	right: 0.5rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+
 
 .navigation {
 	display: flex;
