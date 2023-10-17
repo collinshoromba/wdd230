@@ -201,6 +201,15 @@ nav {
   margin-bottom: 1rem;
 }
 
+.links {
+  color: black;
+}
+
+.links:hover {
+  background-color: #000;
+  color: white;
+}
+
 .adverts a {
   color: white;
 }
