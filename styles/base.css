@@ -143,6 +143,22 @@ nav ul li a:hover {
 
 /*main content*/
 
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
 .column {
     display: grid;
     grid-template-columns: 1fr;
@@ -237,6 +253,7 @@ footer {
         font-size: 1rem;
         text-align: center;
     }
+
 
 }
 
