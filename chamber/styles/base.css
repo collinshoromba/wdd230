@@ -206,6 +206,7 @@ nav {
 .main #weather-section p {
   line-height: 2;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .ad-heading {
@@ -225,10 +226,11 @@ nav {
   margin-bottom: 1rem;
 }
 
-.links {
-  color: black;
-  padding: 5px;
-  margin-bottom: 1rem;
+.main section .links {
+  color: white;
+  border-radius: 5px;
+  background-color: #000;
+  
 }
 
 .links:hover {
