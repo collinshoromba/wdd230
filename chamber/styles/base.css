@@ -206,9 +206,8 @@ nav {
 
 .main #weather-section p {
   text-align: center;
-  margin: 2.1rem;
+  line-height: 2;
   font-weight: bold;
-  padding: .7rem;
 }
 
 .ad-heading {
