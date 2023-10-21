@@ -55,21 +55,20 @@
       <section>
         <h2>Events</h2>
         <h3>Summer Farmers Market</h3>
-        <p>Summer Farmers Market grand opening Saturday: 08:00am</p>
+        <p class="para">Summer Farmers Market grand opening Saturday: 08:00am</p>
         <a class="links" href="#">Learn More</a>
         <h3 class="link-info">Business Forum Week</h3>
-        <p>Come and connect with other business in our area</p>
+        <p class="para">Come and connect with other business in our area</p>
         <a class="links" href="#">Register Now</a>
       </section>
       <section>
         <h2>Weather</h2>
-        <p>
-          🌦️25℃ cloudy
-          <br>
-          Chances of rain: 15%
-          <br>
-          Strong gusty windsin  2hrs
-        </p>
+        <div id="weather-section">
+          <p>Current Temperature: <span id="temperature">40°F</span></p>
+          <p>Current Wind Speed: <span id="windSpeed">10 mph</span></p>
+          <p>Wind Chill Factor: <span id="windChillValue">Calculating...</span></p>
+        </div>
+        
       </section>
     </div>
     <div class="ad-heading">
@@ -130,5 +129,6 @@
     </div>
   </footer>
   <script src="scripts/chamber.js"></script>
+  <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -199,6 +199,18 @@ nav {
   margin: 1rem;
 }
 
+.main section .para {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.main #weather-section p {
+  text-align: center;
+  margin: 2.2rem;
+  font-weight: bold;
+  padding: .7rem;
+}
+
 .ad-heading {
   margin-top: 1rem;
   text-align: center;
@@ -218,6 +230,8 @@ nav {
 
 .links {
   color: black;
+  padding: 5px;
+  margin-bottom: 1rem;
 }
 
 .links:hover {
