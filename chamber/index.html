@@ -41,7 +41,12 @@
 
   <main>
     <div class="hero">
-      <div>
+      <picture>
+        <source srcset="images/chamber-hero-small.webp" media="(max-width: 500px)">
+        <source srcset="images/chamber-hero-medium.webp" media="(max-width: 1000px)">
+        <img src="images/chamber-hero-large.webp" alt="Simba Chamber of Commerce home cover image " width="2" height="1">
+      </picture>
+      <div class="button">
         <a href="#join" title="join" class="btn btn-primary">Join The Chamber</a>
       </div>
     </div>
