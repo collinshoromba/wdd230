@@ -196,12 +196,11 @@ nav {
 }
 
 .main .link-info {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .main section .para {
   font-weight: bold;
-  padding: 1rem;
 }
 
 .main #weather-section p {
