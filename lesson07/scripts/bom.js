@@ -44,7 +44,7 @@ chaptersArray.forEach(chapter => {
     return JSON.parse(localStorage.getItem('myFavBOMList'));
   }
 
-  chapter = chapter.slice(0, chapter.length - 1);
+//chapter = chapter.slice(0, chapter.length - 1);
 
   chaptersArray = chaptersArray.filter((item) => item !== chapter);
 
