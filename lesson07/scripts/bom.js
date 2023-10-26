@@ -2,6 +2,8 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
+
+
 let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => {
@@ -22,7 +24,7 @@ chaptersArray.forEach(chapter => {
     let li = document.createElement('li');
     let deletebutton = document.createElement('button');
     li.textContent = item; 
-    deletebutton.textContent = '❌';
+    deletebutton.textContent = 'Clear';
     deletebutton.classList.add('delete'); 
     li.append(deletebutton);
     list.append(li);
@@ -50,7 +52,10 @@ chaptersArray.forEach(chapter => {
     chapter = chapter.slice(0, chapter.length - 1);
     chaptersArray = chaptersArray.filter(item => item !== chapter);
     setChapterList();
-  }
+  };
+
+  
+
 
 
 
