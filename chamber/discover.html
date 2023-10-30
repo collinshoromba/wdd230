@@ -3,48 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collin Horomba - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Collin Horomba's WDD 23O Web Frontend Development course assignment portal.">
-    <meta name="author" content="Collin Horomba">
+    <title>Simba Chamber Of Commerce</title>
+    <meta name="description" content="The Simba Chamber Of Commerce offers a wealth of resources, including business guides, articles, templates, and links to government resources, to support local businesses in their growth and development. It facilitates networking opportunities among members through directories and event listings, encouraging collaboration and business partnerships.">
+    <meta name="author" content="Collin S. Horomba">
     <meta property="og:title" content="Collin Horomba - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://collinshoromba.github.io/wdd230/lesson06/images/landscape.webp">
+    <meta property="og:image" content="https://collinshoromba.github.io/wdd230/lesson03/chamber-site-plan.html">
     <meta property="og:url" content="https://collinshoromba.github.io/wdd230/">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/channels4_profile.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/simbachamber.png">
     <script src="https://kit.fontawesome.com/19bbbc66ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img src="images/collin.webp" alt="Collin Horomba's profile picture." width="640" height="360">
-        <h1>Collin Horomba</h1>
-    </header>
-    <nav>
-        <button id="menu" aria-label="Name"></button>
-        <ul class="navigation">
-            <li><a href="index.html" title="Home"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html" title="Site Plan" target="_blank">Site Plan</a></li>
-            <li><a href="chamber/index.html" title="Chamber" target="_blank">Chamber</a></li>
-            <li><a href="https://byui.edu" target="_blank" title="BYU Idaho">BYU Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/9?lang=eng&id=p13-p14#p13" title="Scripture" target="_blank">Scripture</a></li>
-        </ul>
-    </nav>
-    <main>
-        
-    </main>
-    <footer>
-        <div id="footer-sect">
-            <p>&copy;<span id="currentYear"></span> | Collin S. Horomba | Zimbabwe ❤️</p>
-            <p class="last-update">Last Modified: <span id="currentDateAndTime"></span></p>
-        </div>
-    </footer>
+  <header>
+    <img src="images/simbachamber-removebg-preview.webp" alt="simba chamber of commerce logo">
+    <h1>Simba Chamber Of Commerce</h1>
+  </header>
+  <nav>
+    
+	  <button id="menu" aria-label="menu"></button>
+    <div id="mode">
+      🖤
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html" title="Home">Home</a></li>
+      <li><a href="discover.html" target="_blank" title="Discovery">Discovery</a></li>
+      <li><a href="#" title="Directory">Directory</a></li>
+      <li><a href="#" title="Join">Join</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    
+  </main>
+  <footer>
 
-    <script src="scripts/getDates.js"></script>
+    <div class="compani-info">
+      <div class="footer-column">
+        <img src="images/simbachamber-removebg-preview.webp" alt="Simba Chamber of Commerce logo">
+      </div>
+      <div class="footer-column">
+        <h3>Simba Chamber of commerce</h3>
+      </div>
+      <div class="footer-column">
+        <p>1234 Address Street,<br>Vereeniging, South Africa</p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+    </div>
+
+    <div class="social">
+      <a href="https://facebook.com" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://x.com" aria-label="twitter hande link"><i class="fa-brands fa-square-x-twitter"></i></a>
+      <a href="https://youtube.com" aria-label="youtube account link"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://linkedin.com" aria-label="linkedin account link"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <div id="footer-sect">
+      <p>&copy;<span id="currentYear"></span> | Collin S. Horomba | Zimbabwe</p>
+      <p class="last-update">Last Modified: <span id="currentDateAndTime"></span></p>
+    </div>
+  </footer>
+  <script src="scripts/chamber.js"></script>
+  <script src="scripts/windchill.js"></script>
 </body>
 </html>
