@@ -49,7 +49,7 @@ nav {
 	background-color: #eee;
 	color: #000;
 	position: absolute;
-	top: 1.5rem;
+	top: 2.1rem;
 	right: 1rem;
   
   font-size: 30px;
@@ -69,7 +69,7 @@ nav {
 
 #mode {
 	position: absolute;
-	top: 5rem;
+	top: 5.2rem;
 	right: 0.5rem;
 	font-size: 2rem;
 	cursor: pointer;
