@@ -392,7 +392,7 @@ footer {
 
 .sidebar {
   grid-area: sidebar;
-  background: #555;
+  background: #004aad;
   color: white;
   padding: 10px;
 }
@@ -485,8 +485,7 @@ footer {
 
 
 
-/* Default styles for larger screens */
-/* ... Your existing CSS for larger screens ... */
+
 
 /* Media Query for Mobile View */
 @media screen and (max-width: 600px) {
@@ -495,9 +494,9 @@ footer {
       display: block;
   }
 
-  /* Adjust specific styles for mobile layout as needed */
+  
   .sidebar {
-      width: 100%; /* Make the sidebar occupy the full width */
+      width: 100%; /* sidebar to occupy the full width */
   }
 
   main {
@@ -505,7 +504,7 @@ footer {
   }
 
   img {
-      max-width: 100%; /* Ensure images don't overflow the container on small screens */
+      max-width: 100%; /* images don't overflow the container on small screens */
   }
 }
 
