@@ -395,6 +395,7 @@ footer {
   background: #004aad;
   color: white;
   padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -406,6 +407,7 @@ footer {
 
 .photos {
   grid-area: main;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   
 }
 
