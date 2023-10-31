@@ -1,7 +1,7 @@
 * {
-	margin: 0;
+  margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -118,7 +118,7 @@ nav {
 .hero {
   position: relative;
   overflow: hidden;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -502,9 +502,9 @@ footer {
 
 
 
-/* Media Query for Mobile View */
+/* Mobile View */
 @media screen and (max-width: 600px) {
-  /* Reset the grid and switch to a single-column layout for mobile */
+  /* single-column layout for mobile */
   .container {
       display: block;
   }
@@ -522,6 +522,15 @@ footer {
       max-width: 100%; /* images don't overflow the container on small screens */
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 
