@@ -419,6 +419,18 @@ footer {
   height: 400px;
   display: block;
   margin: 10px 0;
+  background: #000;
+  animation: fade 20s;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .sidebar ul li {
