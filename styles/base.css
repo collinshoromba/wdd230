@@ -281,7 +281,7 @@ footer {
         font-size: 1rem;
         text-align: center;
     }
-
+   
 
 }
 
@@ -352,10 +352,10 @@ form {
 }
 
 
-
 label {
     display: block;
     margin-top: 10px;
+    font-size: 14px;
 }
 
 input[type="text"],
@@ -399,6 +399,8 @@ input[type="submit"]:hover {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin: 1rem auto;
+    justify-content: center;
     border: 2px solid #333;
     caption-side: top;
     font-family: var(--main-font-family);
@@ -440,13 +442,3 @@ input[type="range"] {
     width: 80%;
 }
 
-
-@media (max-width: 640px) {
-    table th, table td {
-        font-size: 0.8rem;
-        padding: 5px;
-    }
-}
-
-
-  
