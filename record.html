@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Confirmation</title>
+</head>
+<body>
+    <h1>Form Submission Confirmation</h1>
+
+  <p>Your form has been submitted successfully!</p>
+
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>Username</td>
+      <td>?php echo $_GET['username']; ?></td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td>********</td>
+    </tr>
+    <tr>
+      <td>Password Confirmation</td>
+      <td>********</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>?php echo $_GET['email']; ?></td>
+    </tr>
+    <tr>
+      <td>Page Rating</td>
+      <td>?php echo $_GET['page_rating']; ?></td>
+    </tr>
+  </table>
+</body>
+</html>

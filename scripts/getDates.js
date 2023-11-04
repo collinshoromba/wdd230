@@ -35,3 +35,5 @@ visitCountElement.textContent = visitCount;
 
 localStorage.setItem('visitCount', visitCount.toString());
 
+
+
