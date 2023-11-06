@@ -537,6 +537,7 @@ form {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style form labels and input elements */
@@ -569,7 +570,7 @@ textarea {
 
 .form-btn:hover {
   background-color: #000;
-  
+
 }
 
 /* Style the range input and its output */
