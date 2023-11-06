@@ -36,4 +36,8 @@ visitCountElement.textContent = visitCount;
 localStorage.setItem('visitCount', visitCount.toString());
 
 
-
+function updateRangeValue() {
+  const rangeValue = document.getElementById('page_rating').value;
+  const rangeValueDisplay = document.getElementById('range-value');
+  rangeValueDisplay.textContent = rangeValue;
+}

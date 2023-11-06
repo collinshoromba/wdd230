@@ -11,6 +11,7 @@
     <meta property="og:image" content="https://collinshoromba.github.io/wdd230/lesson06/images/landscape.webp">
     <meta property="og:url" content="https://collinshoromba.github.io/wdd230/">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,59 +36,24 @@
         </ul>
     </nav>
     <main>
-        <h2>Membership Application Form</h2>
+        <h2>Form</h2>
         
-    <form action="thankyou.html" method="get">
-        <div>
-            <label for="first_name">Applicant's First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
-        </div>
-        <div>
-            <label for="last_name">Applicant's Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
-        </div>
-        <div>
-            <label for="title">Applicant's Title or Position:</label>
-            <input type="text" id="title" name="title" pattern="^[A-Za-z -]{7,}$">
-        </div>
-        <div>
-            <label for="email">Email Address:</label>
-            <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain" required>
-
-        </div>
-        <div>
-            <label for="mobile">Mobile Phone Number:</label>
-            <input type="tel" id="mobile" name="mobile" required>
-        </div>
-        <div>
-            <label for="organization">Business/Organization Name:</label>
-            <input type="text" id="organization" name="organization" required>
-        </div>
-        <div>
-            <label for="membership">Membership Level:</label>
-            <select id="membership" name="membership">
-                <option value="NP">Choose Membership</option>
-                <option value="Bronze">Bronze Membership</option>
-                <option value="Silver">Silver Membership</option>
-                <option value="Gold">Gold Membership</option>
-            </select>
-        </div>
-        <div>
-            <label for="description">Business/Organization Description:</label>
-            <textarea id="description" name="description"></textarea>
-        </div>
-        <input type="hidden" id="timestamp" name="timestamp" value="">
-      <br>
-      
-    </div>
-        <label for="pageRating">Page Rating</label>
-        <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="output.value = pageRating.value">
-        <output id="output">1</output>
-          
-        <div >
-            <input class="form-btn" type="submit" value="Submit">
-        </div>
-    </form>
+        <form action="record.html" method="get">
+            <label for="fname">Username:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" pattern=".{8,}" placeholder="Eight or more characters" required><br><br>
+            <label for="pwd2">Re-enter Password:</label>
+            <input type="password2" id="pwd2" name="pwd" pattern=".{8,}" placeholder="Eight or more characters" required><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$" placeholder="Please use your 'byui.edu' mail" required>
+            
+            <label for="page_rating">Page Rating</label>
+            <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" oninput="updateRangeValue()">
+            <span id="range-value">1</span>
+            <br>
+            <input type="submit">
+        </form>
     </main>
     <footer>
         <div id="footer-sect">
