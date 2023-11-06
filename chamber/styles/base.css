@@ -523,6 +523,75 @@ footer {
   }
 }
 
+/*form css*/
+
+.join {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style form labels and input elements */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+.form-btn {
+  background-color: #173966;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #000;
+  
+}
+
+/* Style the range input and its output */
+input[type="range"] {
+  width: 70%;
+  margin: 10px 0;
+  cursor: pointer;
+  height: 20px;
+  
+}
+
+
+
+/* Center the output text of the range input */
+output {
+  
+  text-align: center;
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+}
+
 
 
 
