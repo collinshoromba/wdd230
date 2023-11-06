@@ -34,16 +34,18 @@ input {
 
 input[type="range"] {
     width: 100%;
+    cursor: pointer;
 }
 
 .range {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 span#range-value {
-    margin: 10px 10px 10px 0;
     font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
 }
 
 input[type="submit"] {
