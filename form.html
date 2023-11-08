@@ -40,11 +40,11 @@
         
         <form action="record.html" method="get">
             <label for="fname">Username:</label>
-            <input type="text" id="fname" name="fname" required><br><br>
+            <input type="text" id="fname" name="fname" required>
             <label for="pass">Password (8 characters minimum):</label>
             <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-                    placeholder="Atleast 8 characters long  alpha-numeric characters" required></label>
+                    placeholder="Atleast 8 characters long" required></label>
             <label for="pwd">Re-enter Password*:</label>
             <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     title="Must match the origional password"
