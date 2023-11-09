@@ -133,7 +133,7 @@ async function getLinks() {
         week: "Week 9",
         links: [
           {
-              title: "Lesson 09",
+              title: "Lesson 09 The Fetch API",
               url: "lesson09/prophets.html"
           }
         ]  
