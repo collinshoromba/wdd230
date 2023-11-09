@@ -134,7 +134,7 @@ async function getLinks() {
         links: [
           {
               title: "Lesson 09",
-              url: ""
+              url: "lesson09/prophets.html"
           }
         ]  
     },
