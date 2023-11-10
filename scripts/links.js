@@ -123,7 +123,7 @@ async function getLinks() {
             url: "lesson08/tablebuild.html"
         },
         {
-            title: "Forms",
+            title: "Form",
             url: "form.html"
         }
       ]  
