@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "image":"picknpay.jpeg",  
+        "name": "Pick n Pay",
+        "address": "123 Rottuna Street, Vereeniging",
+        "phone": "016 856 8649",
+        "website": "https://picknpay.com",
+        "membership_level": "Gold",
+        "other_info": "Main Grocery Store"
+      },
+      {
+        "image": "fatcakecity.jpeg",
+        "name": "Fat Cake City",
+        "address": "123 Malibongwe, Vereeniging",
+        "phone": "016 784 8763",
+        "website": "https://fatcakecity.com",
+        "membership_level": "Gold",
+        "other_info": "Food outlet"
+      },
+      {
+        "name": "Builders Warehouse",
+        "address": "123 Main St, Vereeniging",
+        "phone": "076 353 6748",
+        "website": "https://builderswarehouse.com",
+        "image": "builders.jpeg",
+        "membership_level": "Gold",
+        "other_info": "Building Equipment"
+      },
+      {
+        "name": "Total",
+        "address": "889 Helios Street, Vereeniging",
+        "phone": "011 673 6543",
+        "website": "https://total.com",
+        "image": "total.jpeg",
+        "membership_level": "Gold",
+        "other_info": "Petrol Station"
+      },
+      {
+        "name": "Takkie Town",
+        "address": "889 Helios Street, Vereeniging",
+        "phone": "011 673 6543",
+        "website": "https://takkietown.com",
+        "image": "takietown.jpeg",
+        "membership_level": "Gold",
+        "other_info": "Shoe City"
+      },
+      {
+        "name": "Emarald Resort",
+        "address": "889 Helios Street, Vereeniging",
+        "phone": "011 673 6543",
+        "website": "https://emaraldresort.com",
+        "image": "emarald.jpeg",
+        "membership_level": "Gold",
+        "other_info": "Resort and Casino"
+      },
+      {
+        "name": "Fruit & Veggie",
+        "address": "889 Helios Street, Vereeniging",
+        "phone": "011 673 6543",
+        "website": "https://fruitandveggie.com",
+        "image": "fruit.jpeg",
+        "membership_level": "Gold",
+        "other_info": "Fruit and Veggie store"
+      }
+    ]
+  }
+  
