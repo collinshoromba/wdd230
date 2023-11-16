@@ -32,7 +32,8 @@
             "title":"Table Build"
           },
           {
-            "url":"lesson"
+            "url":"lesson10/weather.html",
+            "title":"Weather API"
           }
         ]
       }
