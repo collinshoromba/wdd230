@@ -27,4 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('description').textContent = description;
       document.getElementById('weather-icon').src = `https://openweathermap.org/img/w/${iconCode}.png`;
     }
-  });
+
+   // Function to capitalize the first letter of a string
+   function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+ 
+
+});

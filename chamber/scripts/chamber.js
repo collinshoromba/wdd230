@@ -144,3 +144,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  //banner code
+
+   // Function to display or hide the banner based on the day
+   function updateBanner() {
+    const dayOfWeek = new Date().getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    const banner = document.getElementById('banner');
+
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) {  // Monday, Tuesday, Wednesday
+        banner.style.display = 'block';
+    } else {
+        banner.style.display = 'none';
+    }
+}
+
+// Function to close the banner
+function closeBanner() {
+    document.getElementById('banner').style.display = 'none';
+    // You can also store the user's preference to not show the banner again (using cookies or local storage).
+}
+
+// Initial setup
+updateBanner();
+
+// Schedule the banner check (every minute in this example)
+setInterval(updateBanner, 60000); // 1 minute in milliseconds
