@@ -673,6 +673,8 @@ main .members-container {
 #banner p {
   padding: 10px;
   margin-top: 10px;
+  font-family: 'Lora', serif;
+  font-weight: bold;
 }
 
 #close-banner {
