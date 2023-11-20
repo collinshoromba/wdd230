@@ -42,7 +42,7 @@
   <main>
     <div id="banner">
       <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
-      <span id="close-banner" onclick="closeBanner()">❌ Close</span>
+      <span id="close-banner" onclick="closeBanner()">❌</span>
     </div>
     <div class="hero">
       <picture>
@@ -64,13 +64,33 @@
         <h3 class="link-info">Business Forum Week</h3>
         <p class="para">Come and connect with other business in our area</p>
         <a class="links" href="#">Register Now</a>
+        <h3 class="link-info">Business Forum Week</h3>
+        <p class="para">Come and connect with other business in our area</p>
+        <a class="links" href="#">Register Now</a>
+        <h3 class="link-info">Business Forum Week</h3>
+        <p class="para">Come and connect with other business in our area</p>
+        <a class="links" href="#">Register Now</a>
+        <h3 class="link-info">Business Forum Week</h3>
+        <p class="para">Come and connect with other business in our area</p>
+        <a class="links" href="#">Register Now</a>
+        <h3 class="link-info">Business Forum Week</h3>
+        <p class="para">Come and connect with other business in our area</p>
+        <a class="links" href="#">Register Now</a>
+        
       </section>
       <section>
         <h2>Weather</h2>
         <div id="weather-section">
-          <p>Current Temperature: <span id="temperature">45°F</span></p>
+          <img id="weather-icon" src="" alt="Weather Icon">
+          <p><span id="current-temperature">--</span></p>
+          <p><span id="current-description">--</span></p>
+          <h3>3-Day Forecast:</h3>
+          <ul id="forecast-list">
+            <!-- Forecast items will be added dynamically here -->
+          </ul>
+          <!--<p>Current Temperature: <span id="temperature">45°F</span></p>
           <p>Current Wind Speed: <span id="windSpeed">8 mph</span></p>
-          <p>Wind Chill Factor: <span id="windChillValue">Calculating...</span></p>
+          <p>Wind Chill Factor: <span id="windChillValue">Calculating...</span></p>-->
         </div>
         
       </section>
@@ -134,5 +154,6 @@
   </footer>
   <script src="scripts/chamber.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 </html>
