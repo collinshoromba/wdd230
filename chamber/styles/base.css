@@ -533,6 +533,7 @@ footer {
 form {
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 2rem;
   padding: 20px;
   background-color: #f4f4f4;
   border: 1px solid #ccc;
@@ -730,6 +731,21 @@ main .members-container {
 .forecast-item img {
   max-width: 30px;
   margin-top: 5px;
+}
+
+.thank-you {
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
+.thank-you p {
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
 }
 
 

@@ -62,6 +62,10 @@
         "image": "fruit.jpeg",
         "membership_level": "Gold",
         "other_info": "Fruit and Veggie store"
+      },
+      {
+        "name": "Company A",
+        "status": "silver"
       }
     ]
   }

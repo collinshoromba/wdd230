@@ -170,3 +170,63 @@ updateBanner();
 
 // Schedule the banner check (every minute in this example)
 setInterval(updateBanner, 60000); // 1 minute in milliseconds
+
+
+// chamber.js
+
+// Function to fetch data from the JSON file
+async function fetchMembers() {
+  try {
+    const response = await fetch('members.json');
+    const data = await response.json();
+    return data.members;
+  } catch (error) {
+    console.error('Error fetching member data:', error);
+    return [];
+  }
+}
+
+// Function to randomly select companies with silver or gold status
+function getRandomSpotlightMembers(members, status) {
+  const spotlightMembers = members.filter(member => member.membership_level === status);
+  const randomMembers = [];
+
+  while (randomMembers.length < 3 && spotlightMembers.length > 0) {
+    const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
+    randomMembers.push(spotlightMembers.splice(randomIndex, 1)[0]);
+  }
+
+  return randomMembers;
+}
+
+// Function to display spotlight members on the home page
+function displaySpotlightMembers() {
+  const spotlightContainer = document.querySelector('.spotlight-container');
+
+  // Fetch members data
+  fetchMembers().then(members => {
+    // Get random gold status members
+    const goldSpotlightMembers = getRandomSpotlightMembers(members, 'Gold');
+
+    // Get random silver status members
+    const silverSpotlightMembers = getRandomSpotlightMembers(members, 'Silver');
+
+    // Combine gold and silver members
+    const allSpotlightMembers = goldSpotlightMembers.concat(silverSpotlightMembers);
+
+    // Display members in the spotlight container
+    allSpotlightMembers.forEach(member => {
+      const memberCard = document.createElement('div');
+      memberCard.classList.add('spotlight-card');
+      memberCard.innerHTML = `
+        <img src="images/${member.image}" alt="${member.name} Logo">
+        <h3>${member.name}</h3>
+        <p>${member.other_info}</p>
+      `;
+      spotlightContainer.appendChild(memberCard);
+    });
+  });
+}
+
+// Call the displaySpotlightMembers function when the page is loaded
+window.addEventListener('load', displaySpotlightMembers);

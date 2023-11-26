@@ -4,11 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <script src="https://kit.fontawesome.com/19bbbc66ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h2>Form Submission Confirmation</h2>
 
-  <p>Thank You, your form has been submitted successfully!</p>
+  <header>
+    <img src="images/simbachamber-removebg-preview.webp" alt="simba chamber of commerce logo">
+    <h1>Simba Chamber Of Commerce</h1>
+  </header>
+  <nav>
+    
+	  <button id="menu" aria-label="menu"></button>
+    <div id="mode">
+      🖤
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html" title="Home">Home</a></li>
+      <li><a href="discover.html" target="_blank" title="Discovery">Discovery</a></li>
+      <li><a href="directory.html" target="_blank" title="Directory">Directory</a></li>
+      <li><a href="join.html" target="_blank" title="Join">Join</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <section class="thank-you">
+      <h2>Form Submission Confirmation</h2>
+  
+      <p>Thank You!!!
+        <br>
+         Your form has been submitted successfully!
+      </p>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="compani-info">
+      <div class="footer-column">
+        <img src="images/simbachamber-removebg-preview.webp" alt="Simba Chamber of Commerce logo">
+      </div>
+      <div class="footer-column">
+        <h3>Simba Chamber of commerce</h3>
+      </div>
+      <div class="footer-column">
+        <p>1234 Address Street,<br>Vereeniging, South Africa</p>
+        <p><a href="join.html" target="_blank">Contact Us</a></p>
+      </div>
+    </div>
+
+    <div class="social">
+      <a href="https://facebook.com" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://x.com" aria-label="twitter hande link"><i class="fa-brands fa-square-x-twitter"></i></a>
+      <a href="https://youtube.com" aria-label="youtube account link"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://linkedin.com" aria-label="linkedin account link"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <div id="footer-sect">
+      <p>&copy;<span id="currentYear"></span> | Collin S. Horomba | WDD230 | Zimbabwe ❤️</p>
+      <p class="last-update">Last Modified: <span id="currentDateAndTime"></span></p>
+    </div>
+  </footer>
+  <script src="scripts/chamber.js"></script>
 </body>
 </html>
