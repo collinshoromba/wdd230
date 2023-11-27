@@ -176,6 +176,7 @@ nav {
   margin-top: 1rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
+  
 }
 
 .main section {
@@ -746,6 +747,26 @@ main .members-container {
   margin-bottom: 200px;
   font-family: 'Lora', serif;
   font-size: 20px;
+}
+
+
+/*----Spotlight---*/
+
+#spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+#spotlight img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+  display: block;
+  justify-content: center;
 }
 
 

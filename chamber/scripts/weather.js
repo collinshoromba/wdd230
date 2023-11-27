@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial fetch and update
     fetchWeatherData();
 
-    // Set interval to fetch and update weather data every 10 minutes (600,000 milliseconds)
+    //fetch and update weather data every 10 minutes (600,000 milliseconds)
     const intervalId = setInterval(() => {
         fetchWeatherData();
     }, 600000);
