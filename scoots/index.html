@@ -3,17 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Collin Horomba | WDD230 Final Assignment | Scoots is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
     <meta name="authour" content="Collin S. Horomba">
-    <title>Scoots</title>
+    <meta property="og:title" content="Collin Horomba - WDD 230 - Web Frontend Development">
+    <title>Collin Horomba WDD230 Scoots Final Project</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <h1>Welcome To Scoots</h1>
+        <h1>~Scoots~</h1>
+        <p>Explore Cozumel with Fun and Freedom 🛵</p>
     </header>
-    <nav></nav>
-    <main></main>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-brand">
+            <img src="images/scoots-official.png" alt="Scoots official logo">
+          </div>
+  
+          <ul class="navbar-nav-left">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+  
+            <li><a href="about.html">Rentals</a></li>
+            <li><a href="services.html">Reservations</a></li>
+            <li><a href="house-rules.html">Contact</a></li>
+          </ul>
+  
+          <ul class="navbar-nav-right">
+            <li><a href="contact.html">Facebook</a></li>
+            <li><a href="location.html">X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+  
+          <!--Hamburger Menu-->
+  
+          <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+    <main>
+        <div class="mobile-menu hidden" id="menu"> <!--Mobile menu-->
+           <ul>
+              <li><a href="#">Home</a></li>
+               <li><a href="#">Rentals</a></li>
+               <li><a href="#">Reservations</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+           <ul class="socials">
+               <li><a href="#">Facebook</a></li>
+               <li><a href="#">X</a></li>
+               <li><a href="#">YouTube</a></li>
+               <li><a href="#">TikTok</a></li>
+           </ul>
+       </div>
+
+       <section class="cta-section">
+            <h2 class="cta-heading">Ready to make a rental reservation?</h2>
+            <p>Explore our fleet and book your rental today!</p>
+            <a href="#" class="cta-button">Make Reservation</a>
+       </section>
+
+    </main>
     <footer></footer>
+
+    <script src="scripts/scoots.js"></script>
 </body>
 </html>
