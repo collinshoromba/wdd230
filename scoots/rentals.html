@@ -4,8 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentals</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
+    <header>
+        <div id="message" class="message">
+          <p>Today's high temperature is <span id="temp-max"></span>°C</p>
+          <button id="close-btn" class="close-btn">X</button>
+        </div>
+        <h1>~Scoots~</h1>
+        <div class="contact">
+          <p class="phone">+52 987 564 3210</p>
+          <p class="email">info@scoots.com</p>
+        </div>
+        <p>Explore Cozumel with Fun and Freedom 🛵</p>
+      </header>
+      <nav class="navbar">
+          <div class="navbar-container">
+            <div class="navbar-brand">
+              <img src="images/scoots-official.png" alt="Scoots official logo">
+            </div>
     
+            <ul class="navbar-nav-left">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+    
+              <li><a href="about.html">Rentals</a></li>
+              <li><a href="services.html">Reservations</a></li>
+              <li><a href="house-rules.html">Contact</a></li>
+            </ul>
+    
+            <ul class="navbar-nav-right">
+              <li><a href="contact.html">Facebook</a></li>
+              <li><a href="location.html">X</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">TikTok</a></li>
+            </ul>
+    
+            <!--Hamburger Menu-->
+    
+            <button type="button" class="hamburger" id="menu-btn">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+
+        <main>
+            <div class="mobile-menu hidden" id="menu"> <!--Mobile menu-->
+                <ul>
+                   <li><a href="#">Home</a></li>
+                    <li><a href="#">Rentals</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="socials">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h1>Rental Information</h1>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Rental Type</th>
+                      <th>Max. Persons</th>
+                      <th>Reservation Half Day (3 hrs)</th>
+                      <th>Reservation Full Day</th>
+                      <th>Walk-In Half Day (3 hrs)</th>
+                      <th>Walk-In Full Day</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Rows of data will be appended here by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+
+
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="contact">
+                  <h4>Contact Us</h4>
+                  <p><strong>Phone:</strong> +52 987 564 3210</p>
+                  <p><strong>Email:</strong> info@scoots.com</p>
+                </div>
+                <div class="social">
+                  <h4>Follow Us</h4>
+                  <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                  <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                  <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+                </div>
+                <div class="weather">
+                  <h4>Weather</h4>
+                  <p><strong>Current:</strong> <span id="temp"></span>°C, <span id="humidity"></span>% humidity, <span id="main"></span> (<span id="description"></span>) <img id="icon" src="" alt="Weather icon"></p>
+                  <p><strong>Tomorrow:</strong> <span id="forecast"></span>°C at 15:00</p>
+                </div>
+              </div>
+        </footer>
+
+        <script src="scripts/scoots.js"></script>
 </body>
 </html>

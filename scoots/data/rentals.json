@@ -1,0 +1,37 @@
+[
+    {
+      "type": "Honda Metro Scooter",
+      "maxPersons": 1,
+      "reservationHalfDay": 20,
+      "reservationFullDay": 30,
+      "walkInHalfDay": 25,
+      "walkInFullDay": 35
+    },
+    {
+      "type": "Honda Dio Scooter",
+      "maxPersons": 2,
+      "reservationHalfDay": 30,
+      "reservationFullDay": 40,
+      "walkInHalfDay": 35,
+      "walkInFullDay": 45
+    },
+
+    {
+        "name": "Scooter",
+        "image": "scooter.jpg",
+        "price": "$25 per day"
+      },
+      {
+        "name": "Bicycle",
+        "image": "bicycle.jpg",
+        "price": "$15 per day"
+      },
+      {
+        "name": "Motorcycle",
+        "image": "motorcycle.jpg",
+        "price": "$35 per day"
+      }
+    
+  ]
+  
+  

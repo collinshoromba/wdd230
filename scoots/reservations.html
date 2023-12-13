@@ -4,8 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
+    <header>
+        <div id="message" class="message">
+          <p>Today's high temperature is <span id="temp-max"></span>°C</p>
+          <button id="close-btn" class="close-btn">X</button>
+        </div>
+        <h1>~Scoots~</h1>
+        <div class="contact">
+          <p class="phone">+52 987 564 3210</p>
+          <p class="email">info@scoots.com</p>
+        </div>
+        <p>Explore Cozumel with Fun and Freedom 🛵</p>
+      </header>
+      <nav class="navbar">
+          <div class="navbar-container">
+            <div class="navbar-brand">
+              <img src="images/scoots-official.png" alt="Scoots official logo">
+            </div>
     
+            <ul class="navbar-nav-left">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+    
+              <li><a href="about.html">Rentals</a></li>
+              <li><a href="services.html">Reservations</a></li>
+              <li><a href="house-rules.html">Contact</a></li>
+            </ul>
+    
+            <ul class="navbar-nav-right">
+              <li><a href="contact.html">Facebook</a></li>
+              <li><a href="location.html">X</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">TikTok</a></li>
+            </ul>
+    
+            <!--Hamburger Menu-->
+    
+            <button type="button" class="hamburger" id="menu-btn">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <main>
+            <div class="mobile-menu hidden" id="menu"> <!--Mobile menu-->
+                <ul>
+                   <li><a href="#">Home</a></li>
+                    <li><a href="#">Rentals</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="socials">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="item">
+                    <h2>Rental Agreement Information</h2>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>Rental Details</h2>
+                    <form id="rentalForm">
+                        <label for="date">Date:</label><br>
+                        <input type="date" id="date" name="date" required><br>
+                        <label for="period">Period:</label><br>
+                        <input type="text" id="period" name="period" required><br>
+                        <label for="rentalType">Rental Type:</label><br>
+                        <select id="rentalType" name="rentalType" required>
+                            <option value="">Select...</option>
+                            <option value="Honda Metropolitan (49cc) - 1 person">Honda Metropolitan (49cc) - 1 person</option>
+                            <option value="Honda Dio (110cc) - 2 person">Honda Dio (110cc) - 2 person</option>
+                            <option value="Honda PCX150 (149cc) - 2 person">Honda PCX150 (149cc) - 2 person</option>
+                            <option value="Honda Pioneer 1000 - 4 person">Honda Pioneer 1000 - 4 person</option>
+                            <option value="Jeep Wrangler - 4 door manuel with A/C - 5 person">Jeep Wrangler - 4 door manuel with A/C - 5 person</option>
+                            <option value="Jeep Wrangler - 2 door - open air - manuel - 4 person">Jeep Wrangler - 2 door - open air - manuel - 4 person</option>
+                        </select><br>
+                        <label for="number">Number:</label><br>
+                        <input type="number" id="number" name="number" required><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" required><br>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="state">Home State or Country:</label><br>
+                        <input type="text" id="state" name="state" required><br>
+                        <label for="cruiseLine">Cruise Line:</label><br>
+                        <input type="text" id="cruiseLine" name="cruiseLine"><br>
+                        <label for="comments">Special Accommodations/Comments:</label><br>
+                        <textarea id="comments" name="comments"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+              <div class="contact">
+                <h4>Contact Us</h4>
+                <p><strong>Phone:</strong> +52 987 564 3210</p>
+                <p><strong>Email:</strong> info@scoots.com</p>
+              </div>
+              <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+              </div>
+              <div class="weather">
+                <h4>Weather</h4>
+                <p><strong>Current:</strong> <span id="temp"></span>°C, <span id="humidity"></span>% humidity, <span id="main"></span> (<span id="description"></span>) <img id="icon" src="" alt="Weather icon"></p>
+                <p><strong>Tomorrow:</strong> <span id="forecast"></span>°C at 15:00</p>
+              </div>
+            </div>
+          
+          </footer>
+
+
+    <script src="scripts/scoots.js"></script>
 </body>
 </html>

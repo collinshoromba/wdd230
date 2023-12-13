@@ -9,11 +9,20 @@
     <title>Collin Horomba WDD230 Scoots Final Project</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="https://kit.fontawesome.com/19bbbc66ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>~Scoots~</h1>
-        <p>Explore Cozumel with Fun and Freedom 🛵</p>
+      <div id="message" class="message">
+        <p>Today's high temperature is <span id="temp-max"></span>°C</p>
+        <button id="close-btn" class="close-btn">X</button>
+      </div>
+      <h1>~Scoots~</h1>
+      <div class="contact">
+        <p class="phone">+52 987 564 3210</p>
+        <p class="email">info@scoots.com</p>
+      </div>
+      <p>Explore Cozumel with Fun and Freedom 🛵</p>
     </header>
     <nav class="navbar">
         <div class="navbar-container">
@@ -32,10 +41,10 @@
           </ul>
   
           <ul class="navbar-nav-right">
-            <li><a href="contact.html">Facebook</a></li>
-            <li><a href="location.html">X</a></li>
-            <li><a href="#">YouTube</a></li>
-            <li><a href="#">TikTok</a></li>
+            <li><a href="https://facebook.com/collinshoromba/" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="https://x.com/CHoromba/" aria-label="X page link"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <li><a href="https://youtube.com/collinhorombaofficial/" aria-label="YoutTube page link"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://tiktok.com/collinshoromba/" aria-label="Tiktok page link "><i class="fa-brands fa-tiktok"></i></a></li>
           </ul>
   
           <!--Hamburger Menu-->
@@ -50,27 +59,72 @@
     <main>
         <div class="mobile-menu hidden" id="menu"> <!--Mobile menu-->
            <ul>
-              <li><a href="#">Home</a></li>
-               <li><a href="#">Rentals</a></li>
-               <li><a href="#">Reservations</a></li>
-               <li><a href="#">Contact</a></li>
+              <li><a href="index.html" title="Home">Home</a></li>
+               <li><a href="rentals.html" title="Rentals" target="_blank">Rentals</a></li>
+               <li><a href="reservations.html" title="Reservations" target="_blank">Reservations</a></li>
+               <li><a href="reservations.html" title="Contact" target="_blank">Contact</a></li>
            </ul>
-           <ul class="socials">
-               <li><a href="#">Facebook</a></li>
-               <li><a href="#">X</a></li>
-               <li><a href="#">YouTube</a></li>
-               <li><a href="#">TikTok</a></li>
-           </ul>
+           <div class="socials">
+               <a href="https://facebook.com/collinshoromba/" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a>
+               <a href="https://x.com/CHoromba/" aria-label="X page link"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+               <a href="https://youtube.com/collinhorombaofficial/" aria-label="YoutTube page link"><i class="fa-brands fa-youtube"></i></a>
+               <a href="https://tiktok.com/collinshoromba/" aria-label="Tiktok page link "><i class="fa-brands fa-tiktok"></i></a>
+           </div>
        </div>
 
-       <section class="cta-section">
-            <h2 class="cta-heading">Ready to make a rental reservation?</h2>
-            <p>Explore our fleet and book your rental today!</p>
-            <a href="#" class="cta-button">Make Reservation</a>
-       </section>
+      <div class="main">
+        <div class="item">
+          <h2>Welcome to Our Island!</h2>
+          <img src="images/pexels-stephan-müller-753876.jpg" loading="lazy" alt="Main Image" class="main-image">
+          <button class="action-button" type="button"><a href="reservations.html" target="_blank">Reserve Yours Now!</a></button>
+        
+              <div class="rental-card">
+                <h3>Car Rental</h3>
+                <p>Discover the freedom of the open road with our diverse selection of cars. Whether you need a compact car for city exploration or a spacious SUV for a family trip, we have the perfect vehicle for your needs.</p>
+              </div>
+      </div>
+
+
+        <div class="rentals">
+          <h2>Explore our fleet and book your rental today!</h2>
+          <img src="images/island-1.jpg" alt="">
+          <div class="rental-info">
+            <div class="rental-card">
+              <h3>Car Rental</h3>
+              <p>Discover the freedom of the open road with our diverse selection of cars. Whether you need a compact car for city exploration or a spacious SUV for a family trip, we have the perfect vehicle for your needs.</p>
+            </div>
+
+          </div>
+
+        </div>
+    
+      </div>
+
+      
 
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="contact">
+          <h4>Contact Us</h4>
+          <p><strong>Phone:</strong> +52 987 564 3210</p>
+          <p><strong>Email:</strong> info@scoots.com</p>
+        </div>
+        <div class="social">
+          <h4>Follow Us</h4>
+          <a href="https://facebook.com/collinshoromba/" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://x.com/CHoromba/" aria-label="X page link"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://youtube.com/collinhorombaofficial/" aria-label="YoutTube page link"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://tiktok.com/collinshoromba/" aria-label="Tiktok page link "><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="weather">
+          <h4>Weather</h4>
+          <p><strong>Current:</strong> <span id="temp"></span>°C, <span id="humidity"></span>% humidity, <span id="main"></span> (<span id="description"></span>) <img id="icon" src="" alt="Weather icon"></p>
+          <p><strong>Tomorrow:</strong> <span id="forecast"></span>°C at 15:00</p>
+        </div>
+      </div>
+    
+    </footer>
 
     <script src="scripts/scoots.js"></script>
 </body>
