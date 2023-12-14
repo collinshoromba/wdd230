@@ -34,6 +34,10 @@
           {
             "url":"lesson10/weather.html",
             "title":"Weather API"
+          },
+          {
+            "url":"../scoots/index.html",
+            "title":"Scoots"
           }
         ]
       }
