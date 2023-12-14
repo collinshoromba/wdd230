@@ -1,18 +1,46 @@
+:root {
+  --header-font: 'Bebas Neue', sans-serif;
+  --body-font: 'Kalnia', serif;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+  font-family: var(--body-font);
+}
+
 /****Starting with header****/
 
 header {
-    background-color: #4CAF50;
-    color: black;
+    background-image: url("../images/pexels-brett-sayles-19314983.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: white;
     text-align: center;
     padding: 1em;
+    margin-top: 1rem;
+    font-family: var(--header-font);
     /*dont forget to add font styles*/
 }
+
+header .message {
+  font-size: 2rem;
+}
+
+.contact p {
+  line-height: 1.7;
+}
+
+header .explo {
+  margin-top: 1rem;
+}
+
+
 
 /****Nav bar****/
 
@@ -140,7 +168,7 @@ header {
 
 .mobile-menu{
   position: fixed;
-  top: 130px;
+  top: 20.5rem;
   right: 0;
   color: black;
   background-color: #004e89;
@@ -164,6 +192,10 @@ header {
   border-bottom: yellow solid 1px;
   padding-bottom: 10px;
   margin-bottom: 30px;
+}
+
+.mobile-menu li {
+  list-style: none;
 }
 
 
@@ -203,6 +235,7 @@ header {
   .main-image {
     width: 100%;
     height: auto;
+    margin-top: 2rem;
 }
 .action-button {
     background-color: #4CAF50; /* Green */
@@ -235,12 +268,12 @@ header {
   /* Style the button */
  
   
-  /* Style the rental information */
+  /* Style the rental information 
   .rental-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  }
+  }*/
   
   /* Style the rental cards */
   .rental-card {
@@ -277,20 +310,67 @@ header {
 
   /*******RENTALS*******/
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .rentals-table {
-    width: 100%;
+  .rental-table {
     border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .rentals-table td {
+  .rental-table th,
+  .rental-table td {
     padding: 10px;
-    border: 1px solid #333;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .rental-table th {
+    font-weight: bold;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .divider-row {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333333;
+    padding: 5px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  section#rentals {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .rental-types {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .rental-types > div {
+    flex-basis: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .rental-types > div {
+      flex-basis: 100%;
+    }
+  }
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   /*reservations*/ 
@@ -301,9 +381,98 @@ header {
     gap: 10px;
 }
 .item {
-    border: 1px solid black;
-    padding: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
+
+/***Contact***/
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map iframe {
+  width: 100%; /* Make the iframe take full width */
+  max-width: 800px; /* Set a maximum width for larger screens */
+}
+
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  color: #333;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.phone {
+  color: #007bff;
+}
+
+.email {
+  color: #28a745;
+}
+
+/* Contact Form styling */
+
+.item h2 {
+  color: #333;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
     .main {
@@ -318,6 +487,15 @@ header {
     .container {
         grid-template-columns: 1fr;
     }
+}
+
+
+/****Contact***/
+
+@media (max-width: 600px) {
+  .map iframe {
+      max-width: 100%; 
+  }
 }
 
 
@@ -383,6 +561,21 @@ header {
     .divider {
         max-width: 90%;
     }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  /* Adjust styles for screens larger than 768px */
+  .rental-type {
+    width: calc(33.33% - 20px);
+  }
 }
 
 

@@ -1,37 +1,92 @@
 [
-    {
-      "type": "Honda Metro Scooter",
-      "maxPersons": 1,
-      "reservationHalfDay": 20,
-      "reservationFullDay": 30,
-      "walkInHalfDay": 25,
-      "walkInFullDay": 35
-    },
-    {
-      "type": "Honda Dio Scooter",
-      "maxPersons": 2,
-      "reservationHalfDay": 30,
-      "reservationFullDay": 40,
-      "walkInHalfDay": 35,
-      "walkInFullDay": 45
-    },
-
-    {
-        "name": "Scooter",
-        "image": "scooter.jpg",
-        "price": "$25 per day"
+  {
+    "type": "Honda Motor Scooters",
+    "image": "motor-scooters.jpg",
+    "vehicles": [
+      {
+        "name": "Honda Metropolitan (49cc)",
+        "capacity": 1,
+        "price": {
+          "halfDay": {
+            "reservation": 20,
+            "walkIn": 25
+          },
+          "fullDay": {
+            "reservation": 30,
+            "walkIn": 35
+          }
+        }
       },
       {
-        "name": "Bicycle",
-        "image": "bicycle.jpg",
-        "price": "$15 per day"
-      },
-      {
-        "name": "Motorcycle",
-        "image": "motorcycle.jpg",
-        "price": "$35 per day"
+        "name": "Honda Dio (110cc)",
+        "capacity": 2,
+        "price": {
+          "halfDay": {
+            "reservation": 30,
+            "walkIn": 35
+          },
+          "fullDay": {
+            "reservation": 40,
+            "walkIn": 45
+          }
+        }
       }
-    
-  ]
+    ]
+  },
+  {
+    "type": "Side-by-Side ATVs",
+    "image": "side-by-side.jpg",
+    "vehicles": [
+      {
+        "name": "Honda Pioneer 1000",
+        "capacity": 4,
+        "price": {
+          "halfDay": {
+            "reservation": 50,
+            "walkIn": 60
+          },
+          "fullDay": {
+            "reservation": 70,
+            "walkIn": 80
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "Jeeps",
+    "image": "jeeps.jpg",
+    "vehicles": [
+      {
+        "name": "Jeep Wrangler - 4 door manuel with A/C",
+        "capacity": 5,
+        "price": {
+          "halfDay": {
+            "reservation": 70,
+            "walkIn": 85
+          },
+          "fullDay": {
+            "reservation": 100,
+            "walkIn": 125
+          }
+        }
+      },
+      {
+        "name": "Jeep Wrangler - 2 door open air manuel",
+        "capacity": 4,
+        "price": {
+          "halfDay": {
+            "reservation": 60,
+            "walkIn": 70
+          },
+          "fullDay": {
+            "reservation": 85,
+            "walkIn": 90
+          }
+        }
+      }
+    ]
+  }
+]
   
   

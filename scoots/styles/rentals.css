@@ -1,0 +1,24 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rental-types {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    flex-basis: 100%;
+}
+/* Media query for screens larger than 600px */
+@media (min-width: 600px) {
+    .rental-types {
+        flex-basis: 45%;
+    }
+}
+/* Media query for screens larger than 900px */
+@media (min-width: 900px) {
+    .rental-types {
+        flex-basis: 30%;
+    }
+}
+  

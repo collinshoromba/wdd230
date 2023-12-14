@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="description" content="~Scoots~ is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <meta name="authour" content="Collin S. Horomba">
+    <meta property="og:title" content="Contact Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://collinshoromba.github.io/wdd230/lesson06/images/landscape.webp">
+    <meta property="og:url" content="https://collinshoromba.github.io/wdd230/">
+    <title>Contact Scoots</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/scoots-official.png">
+    <script src="https://kit.fontawesome.com/19bbbc66ea.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -19,7 +28,7 @@
           <p class="phone">+52 987 564 3210</p>
           <p class="email">info@scoots.com</p>
         </div>
-        <p>Explore Cozumel with Fun and Freedom 🛵</p>
+        <p class="explo">Explore Cozumel with Fun and Freedom 🛵</p>
       </header>
       <nav class="navbar">
           <div class="navbar-container">
@@ -29,19 +38,19 @@
     
             <ul class="navbar-nav-left">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.html" type="Home">Home</a>
               </li>
     
-              <li><a href="about.html">Rentals</a></li>
-              <li><a href="services.html">Reservations</a></li>
-              <li><a href="house-rules.html">Contact</a></li>
+              <li><a href="rentals.html" type="Rentals">Rentals</a></li>
+              <li><a href="reservations.html" type="Reservations">Reservations</a></li>
+              <li><a href="contact.html" type="Contact">Contact</a></li>
             </ul>
     
             <ul class="navbar-nav-right">
-              <li><a href="contact.html">Facebook</a></li>
-              <li><a href="location.html">X</a></li>
-              <li><a href="#">YouTube</a></li>
-              <li><a href="#">TikTok</a></li>
+              <li><a href="https://facebook.com/collinshoromba/" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a></li>
+              <li><a href="https://x.com/CHoromba/" aria-label="X page link"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+              <li><a href="https://youtube.com/collinhorombaofficial/" aria-label="YoutTube page link"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="https://tiktok.com/collinshoromba/" aria-label="Tiktok page link "><i class="fa-brands fa-tiktok"></i></a></li>
             </ul>
     
             <!--Hamburger Menu-->
@@ -55,29 +64,33 @@
         </nav>    
 
     <main>
-        <div class="mobile-menu hidden" id="menu"> <!--Mobile menu-->
-            <ul>
-               <li><a href="#">Home</a></li>
-                <li><a href="#">Rentals</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="socials">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">YouTube</a></li>
-                <li><a href="#">TikTok</a></li>
-            </ul>
+      <div class="mobile-menu hidden" id="menu"> <!--Mobile menu-->
+        <ul>
+           <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="rentals.html" title="Rentals" target="_blank">Rentals</a></li>
+            <li><a href="reservations.html" title="Reservations" target="_blank">Reservations</a></li>
+            <li><a href="reservations.html" title="Contact" target="_blank">Contact</a></li>
+        </ul>
+        <div class="socials">
+            <a href="https://facebook.com/collinshoromba/" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://x.com/CHoromba/" aria-label="X page link"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <a href="https://youtube.com/collinhorombaofficial/" aria-label="YoutTube page link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tiktok.com/collinshoromba/" aria-label="Tiktok page link "><i class="fa-brands fa-tiktok"></i></a>
         </div>
+    </div>
 
         <div class="container">
-            <div class="item">
+            <div class="item contact-info">
                 <h2>Contact Information</h2>
-                <!-- Add your contact information here -->
+                <div class="contact">
+                  <p class="phone">+27 67 0938 086</p>
+                  <p class="email">info@scoots.com</p>
+                </div>
+                
             </div>
             <div class="item">
                 <h2>Contact Us</h2>
-                <form id="contactForm">
+                <form id="contactForm" class="contactForm">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Name" required><br>
                     <label for="email">Email:</label><br>
@@ -87,33 +100,35 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
-            <div class="item">
-                <h2>Our Locations</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14255.243028715246!2d27.88974645!3d-26.71849205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1702467419548!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
+          </div>
+          <div class="map">
+              <h2>Our Locations</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14255.243028715246!2d27.88974645!3d-26.71849205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1702467419548!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14255.243028715246!2d27.88974645!3d-26.71849205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1702467419548!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
     </main>
     <footer>
-        <div class="footer">
-          <div class="contact">
-            <h4>Contact Us</h4>
-            <p><strong>Phone:</strong> +52 987 564 3210</p>
-            <p><strong>Email:</strong> info@scoots.com</p>
-          </div>
-          <div class="social">
-            <h4>Follow Us</h4>
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="tiktok.png" alt="TikTok"></a>
-          </div>
-          <div class="weather">
-            <h4>Weather</h4>
-            <p><strong>Current:</strong> <span id="temp"></span>°C, <span id="humidity"></span>% humidity, <span id="main"></span> (<span id="description"></span>) <img id="icon" src="" alt="Weather icon"></p>
-            <p><strong>Tomorrow:</strong> <span id="forecast"></span>°C at 15:00</p>
-          </div>
+      <div class="footer">
+        <div class="contact">
+          <h4>Contact Us</h4>
+          <p><strong>Phone:</strong> +52 987 564 3210</p>
+          <p><strong>Email:</strong> info@scoots.com</p>
         </div>
-      
-      </footer>
+        <div class="social">
+          <h4>Follow Us</h4>
+          <a href="https://facebook.com/collinshoromba/" aria-label="facebook page link"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://x.com/CHoromba/" aria-label="X page link"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://youtube.com/collinhorombaofficial/" aria-label="YoutTube page link"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://tiktok.com/collinshoromba/" aria-label="Tiktok page link "><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="weather">
+          <h4>Weather</h4>
+          <p><strong>Current:</strong> <span id="temp"></span>°C, <span id="humidity"></span>% humidity, <span id="main"></span> (<span id="description"></span>) <img id="icon" src="" alt="Weather icon"></p>
+          <p><strong>Tomorrow:</strong> <span id="forecast"></span>°C at 15:00</p>
+        </div>
+      </div>
+    
+    </footer>
 
 
 
