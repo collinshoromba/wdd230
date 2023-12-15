@@ -17,7 +17,7 @@ body {
 /****Starting with header****/
 
 header {
-    background-image: url("../images/pexels-brett-sayles-19314983.jpg");
+    background-image: url("../images/cover-2.webp");
     background-size: auto;
     background-repeat: no-repeat;
     color: white;
@@ -30,10 +30,46 @@ header {
 
 header .message {
   font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
 }
 
-.contact p {
+
+
+.contact-det {
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+
+
+.contact-det h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-det p {
   line-height: 1.7;
+  text-align: center;
+}
+
+.contact-det .action-button {
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-det .action-button:hover {
+  background-color: black;
+}
+
+.contact-det button a {
+  justify-content: center;
+  color: whitesmoke;
+  font-family: var(--header-font);
+  font-weight: bold;
 }
 
 header .explo {
@@ -220,16 +256,152 @@ header .explo {
 
 /*main styling*/
 
+.rentals {
+  border-radius: 20px;
+}
+
+.rental-info {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.rental-info img {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.rental-info h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--header-font);
+}
+
+.rental-info p {
+  font-family: var(--header-font);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.item .rental-card {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.item .rental-card h3 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: var(--header-font);
+}
+
+.item .rental-card .first-p {
+  font-family: var(--header-font);
+  line-height: 1.5;
+}
+
+.item .rental-card img {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.item .rental-card .action-button {
+  margin-top: 2rem;
+}
+
+.item .rental-card .action-button:hover {
+  background-color: black;
+}
+
+.motor, .atv, .jeeps, h4 {
+  font-family: var(--header-font);
+  margin-bottom: 1rem;
+} 
+.motor, .atv, .jeeps, p {
+  font-family: var(--header-font);
+} 
+
+
+
+.item .rental-card a {
+  text-align: center;
+  color: whitesmoke;
+  font-family: var(--header-font);
+  font-weight: bold;
+}
+
+.item .scoots-hero {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+.item .scoots-hero img {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.item .scoots-hero h2 {
+  padding: 2rem;
+}
+
+.item .scoots-hero .action-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.item .scoots-hero .action-button:hover {
+  background-color: black;
+}
+
+.item .scoots-hero .action-button a {
+  color: whitesmoke;
+  text-align: center;
+  font-family: var(--header-font);
+  font-weight: bold;
+}
+
+.weather {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  margin: 2rem;
+}
+
+.social .fa-brands {
+  padding: 1rem;
+  font-size: large;
+  color: #28a745;
+}
+
+.container .item-rent ul li {
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: var(--header-font);
+  border: 1px green solid;
+}
+
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
+    
   }
 
   .item {
-    border: 1px solid black;
     padding: 10px;
+    
   }
   
   .main-image {
@@ -244,7 +416,8 @@ header .explo {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    border-radius: 15px;
+    justify-content: center;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -285,7 +458,9 @@ header .explo {
   /* Style the footer */
   .footer {
     background-color: #333;
+    align-items: center;
     color: white;
+    justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
@@ -294,6 +469,10 @@ header .explo {
   /* Style the footer headings */
   .footer h4 {
     margin-bottom: 10px;
+  }
+
+  .footer .footer-col a {
+    color: white;
   }
   
   /* Style the social media icons */
