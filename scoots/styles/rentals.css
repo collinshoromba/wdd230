@@ -1,24 +1,85 @@
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.rental-types {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    flex-basis: 100%;
-}
-/* Media query for screens larger than 600px */
-@media (min-width: 600px) {
-    .rental-types {
-        flex-basis: 45%;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
     }
-}
-/* Media query for screens larger than 900px */
-@media (min-width: 900px) {
-    .rental-types {
-        flex-basis: 30%;
+
+    th {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      
     }
-}
+
+    tr {
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    td {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+    }
+
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+      content: "Rental Type";
+    }
+
+    td:nth-of-type(2):before {
+      content: "Max. Persons";
+    }
+
+    td:nth-of-type(3):before {
+      content: "Half Day (3 hrs)";
+    }
+
+    td:nth-of-type(4):before {
+      content: "Full Day";
+    }
+
+    td:nth-of-type(5):before {
+      content: "Half Day (3 hrs)";
+    }
+
+    td:nth-of-type(6):before {
+      content: "Full Day";
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
   
+  
+
+ 

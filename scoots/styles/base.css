@@ -67,7 +67,7 @@ header .message {
 
 .contact-det button a {
   justify-content: center;
-  color: whitesmoke;
+  color: black;
   font-family: var(--header-font);
   font-weight: bold;
 }
@@ -243,7 +243,7 @@ header .explo {
 }
 
 .mobile-menu a:hover {
-  color: yellow;
+  color: black;
 }
 
 .hidden {
@@ -314,6 +314,7 @@ header .explo {
 
 .item .rental-card .action-button:hover {
   background-color: black;
+  color: white;
 }
 
 .motor, .atv, .jeeps, h4 {
@@ -328,7 +329,7 @@ header .explo {
 
 .item .rental-card a {
   text-align: center;
-  color: whitesmoke;
+  color: black;
   font-family: var(--header-font);
   font-weight: bold;
 }
@@ -355,10 +356,11 @@ header .explo {
 
 .item .scoots-hero .action-button:hover {
   background-color: black;
+  color: whitesmoke;
 }
 
 .item .scoots-hero .action-button a {
-  color: whitesmoke;
+  color: black;
   text-align: center;
   font-family: var(--header-font);
   font-weight: bold;
@@ -426,7 +428,7 @@ header .explo {
 .action-button {
     background-color: #4CAF50; /* Green */
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -503,68 +505,10 @@ header .explo {
 
   /*******RENTALS*******/
 
-  .rental-table {
-    border-collapse: collapse;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .rental-table th,
-  .rental-table td {
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .rental-table th {
-    font-weight: bold;
-    background-color: #333333;
-    color: #FFFFFF;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .divider-row {
-    background-color: #f5f5f5;
-    font-weight: bold;
-    color: #333333;
-    padding: 5px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
 
-  section {
-    margin-bottom: 20px;
-  }
-
-  section#rentals {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .rental-types {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .rental-types > div {
-    flex-basis: 50%;
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .rental-types > div {
-      flex-basis: 100%;
-    }
-  }
   
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+
 
   /*reservations*/ 
 

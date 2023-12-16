@@ -72,53 +72,27 @@ getWeatherData();
 
 //RENTALS DATA
 
-        // Load and parse JSON data
-        fetch('data/rentals.json')
-          .then(response => response.json())
-          .then(data => {
-            data.forEach(rentalType => {
-              // Create rental type container
-              const container = document.createElement('div');
-              container.classList.add('rental-type');
+document.addEventListener('DOMContentLoaded', function () {
+  const tableBody = document.querySelector('#pricingTable tbody');
 
-              // Add image (check image path)
-              const image = document.createElement('img');
-              image.src = `images/${rentalType.image}`; // Make sure "honda-scooters.jpg", etc. exist in the folder
-              container.appendChild(image);
-
-              // Add title
-              const title = document.createElement('h3');
-              title.textContent = rentalType.type;
-              container.appendChild(title);
-
-              // Create table
-              const table = document.createElement('table');
-              table.classList.add('rental-table');
-              const headerRow = document.createElement('tr');
-              headerRow.innerHTML = `<th>Vehicle</th><th>Capacity</th><th>Half Day (Reservation)</th><th>Half Day (Walk-In)</th><th>Full Day (Reservation)</th><th>Full Day (Walk-In)</th>`;
-              table.appendChild(headerRow);
-
-              // Add vehicle rows
-              rentalType.vehicles.forEach(vehicle => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                  <td>${vehicle.name}</td>
-                  <td>${vehicle.capacity}</td>
-                  <td>$${vehicle.price.halfDay.reservation}</td>
-                  <td>$${vehicle.price.halfDay.walkIn}</td>
-                  <td>$${vehicle.price.fullDay.reservation}</td>
-                  <td>$${vehicle.price.fullDay.walkIn}</td>
-                `;
-                table.appendChild(row);
-              });
-
-              // Add table to container
-              container.appendChild(table);
-
-              // Add container to rental types
-              document.getElementById('rentals').appendChild(container);
-            });
-          });
+  fetch('data/rentals.json')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.type}</td>
+          <td>${item.persons}</td>
+          <td>$${item.halfDay}</td>
+          <td>$${item.fullDay}</td>
+          <td>$${item.halfDayWalkIn}</td>
+          <td>$${item.fullDayWalkIn}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+});
 
 
 
