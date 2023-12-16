@@ -27,7 +27,7 @@
     <nav class="navbar">
         <div class="navbar-container">
           <div class="navbar-brand">
-            <img src="images/scoots-official-1.webp" alt="Scoots official logo">
+            <img src="images/scoots-official-1.webp" alt="Scoots official logo" width="100" height="100">
           </div>
   
           <ul class="navbar-nav-left">
@@ -76,7 +76,11 @@
         <div class="item">
           <section class="scoots-hero">
             <h2>Welcome to Scoots!</h2>
-            <img src="images/jeeps.webp" loading="lazy" alt="Main Image" class="main-image">
+            <picture>
+              <source media="(max-width: 799px)" srcset="images/jeeps.webp" width=480 height=400/>
+              <source media="(min-width: 800px)" srcset="images/jeeps.webp" width=800 height=400/>
+              <img src="images/jeeps.webp" loading="lazy" alt="Main Image" class="main-image">
+            </picture>
             <a class="action-button" href="reservations.html" target="_blank">Reserve Yours Now!</a>
           </section>
         
