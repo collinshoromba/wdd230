@@ -41,7 +41,7 @@ header .message {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   margin: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 
@@ -56,20 +56,23 @@ header .message {
   text-align: center;
 }
 
-.contact-det .action-button {
-  justify-content: center;
-  align-items: center;
-}
+
 
 .contact-det .action-button:hover {
   background-color: black;
+  color: white ;
 }
 
-.contact-det button a {
+ .contact-det .action-button {
   justify-content: center;
   color: black;
   font-family: var(--header-font);
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+
 }
 
 header .explo {
@@ -287,7 +290,7 @@ header .explo {
 .item .rental-card {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 5rem;
 }
 
@@ -308,8 +311,9 @@ header .explo {
   margin-bottom: 1rem;
 }
 
-.item .rental-card .action-button {
+.item .rental-in .action-button {
   margin-top: 2rem;
+  
 }
 
 .item .rental-card .action-button:hover {
@@ -323,8 +327,12 @@ header .explo {
 } 
 .motor, .atv, .jeeps, p {
   font-family: var(--header-font);
+  margin-bottom: 2rem;
 } 
 
+.scoots-hero {
+  padding: 2rem;
+}
 
 
 .item .rental-card a {
@@ -349,7 +357,7 @@ header .explo {
 }
 
 .item .scoots-hero .action-button {
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
 }
@@ -359,7 +367,7 @@ header .explo {
   color: whitesmoke;
 }
 
-.item .scoots-hero .action-button a {
+.item .scoots-hero .action-button  {
   color: black;
   text-align: center;
   font-family: var(--header-font);
