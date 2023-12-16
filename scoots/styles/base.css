@@ -17,10 +17,8 @@ body {
 /****Starting with header****/
 
 header {
-    background-image: url("../images/cover-2.webp");
-    background-size: auto;
-    background-repeat: no-repeat;
-    color: white;
+    background-color: #28a745;
+    color: black;
     text-align: center;
     padding: 1em;
     margin-top: 1rem;
