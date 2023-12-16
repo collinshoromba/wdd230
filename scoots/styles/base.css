@@ -23,7 +23,6 @@ header {
     padding: 1em;
     margin-top: 1rem;
     font-family: var(--header-font);
-    /*dont forget to add font styles*/
 }
 
 header .message {
@@ -460,15 +459,7 @@ header .explo {
     padding: 20px;
   }
   
-  /* Style the button */
- 
   
-  /* Style the rental information 
-  .rental-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }*/
   
   /* Style the rental cards */
   .rental-card {
@@ -507,14 +498,7 @@ header .explo {
     width: 50px;
     vertical-align: middle;
   }
-
-
-  /*******RENTALS*******/
-
-
   
-
-
 
   /*reservations*/ 
 
@@ -540,8 +524,8 @@ header .explo {
 }
 
 .map iframe {
-  width: 100%; /* Make the iframe take full width */
-  max-width: 800px; /* Set a maximum width for larger screens */
+  width: 100%; 
+  max-width: 800px; 
 }
 
 .contact-info {
@@ -631,12 +615,12 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 599px) {
   .container-1 {
-    flex-direction: column; /* Stack items on top of each other */
+    flex-direction: column; 
   }
 
   .item-rent,
   .item {
-    width: 100%; /* Take up the full width on small screens */
+    width: 100%; 
   }
 }
 
