@@ -391,6 +391,20 @@ header .explo {
   border: 1px green solid;
 }
 
+.thank-you {
+  text-align: center;
+  margin: 4rem;
+}
+
+.thank-you h2 {
+  font-family: var(--header-font);
+  margin: 2rem;
+}
+
+.thank-you p {
+  font-family: var(--body-font);
+}
+
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr;
