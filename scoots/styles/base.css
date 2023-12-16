@@ -85,7 +85,7 @@ header .explo {
 .navbar {
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 20px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 10%),
     0 2px 2px rgb(0 0 0 / 6%), 
@@ -114,10 +114,13 @@ header .explo {
 .navbar a {
     color: black;
     text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
 
 .navbar a:hover {
-    color: #0077b6;
+    color: white;
+    background-color: black;
 }
 
 .navbar-brand img {
@@ -521,11 +524,15 @@ header .explo {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .map iframe {
   width: 100%; 
   max-width: 800px; 
+  margin: 1rem;
+  padding: 2rem;
+  
 }
 
 .contact-info {
