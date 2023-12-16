@@ -596,8 +596,8 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #28a745;
+  color: black;
   cursor: pointer;
   padding: 10px;
   border: none;
@@ -605,7 +605,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: black;
+  color: white;
 }
 
 
