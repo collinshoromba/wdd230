@@ -160,11 +160,11 @@ async function getLinks() {
     },
 
     {
-        week: "Week 12",
+        week: "Collin Horomba",
         links: [
           {
-              title: "Lesson 12",
-              url: ""
+              title: "resume",
+              url: "resume/index.html"
           }
         ]  
     },
